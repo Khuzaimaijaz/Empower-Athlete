@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page Design</title>
+    <style>
+        /* Internal CSS */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000000a8;
+            background-image: url('main img.jpg');
+            height: 100%;
+            width: 100%;
+            background-size: cover;
+            overflow: hidden;
+            
+        }
+        .container > h1{
+            color: #ff0015;
+            text-align: center;
+            font-size: 6vh;
+           
+          
+        }
+        .container {
+            max-width: 600px;
+            margin: 5% auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+        }
+        input, textarea {
+            width: 80%;
+            padding: 20px;
+            margin-bottom: 25px;
+            border: 1px solid #ff0015;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #ff0015;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #ff7b86;
+        }
+        @media screen and (max-width:768px) {
+            body{
+                background-image: none;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Get in touch</h1>
+        <div class="contact-form">
+            <form action="https://api.web3forms.com/submit" method="POST">
+        
+                <!-- Replace with your Access Key -->
+                <input type="hidden" name="access_key" value="ba3c46bf-1f5b-4727-8881-072946360e42">
+            
+                <!-- Form Inputs. Each input must have a name="" attribute -->
+                <input type="text" name="name" placeholder="YOUR NAME" required>
+                <input type="text" name="father-name" placeholder="FATHER NAME" required>
+                <input type="number" name="phone number" placeholder="YOUR PHONE" required>
+                <input type="email" name="email" placeholder="YOUR EMAIL" required>
+                <textarea name="message" placeholder="YOUR MESSAGE" required></textarea>
+            
+                <!-- Honeypot Spam Protection -->
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+            
+                <!-- Custom Confirmation / Success Page -->
+                <!-- <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html"> -->
+            
+                <button type="submit">Submit Form</button>
+            
+            </form>
+        </div>
+</body>
+</html>

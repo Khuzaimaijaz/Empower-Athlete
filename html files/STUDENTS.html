@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education Section</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+#education {
+    padding: 20px;
+    background-color: #e4e1e1;
+    margin: 20px;
+    border: #333;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    font-size: 50px;
+    color: #ff0015;
+}
+p{
+    text-align: center;
+    line-height: 25px;
+}
+
+.education-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.education-category {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.education-category h3 {
+    text-align: center;
+    font-size: 30px;
+    color: #555;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 5px;
+}
+
+table, th, td {
+    border: 1px solid #000000;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+    color: #ff0015;
+}
+
+.student-img {
+    width: 80px;
+    height: 50px;
+    border-radius: 10PX;
+    background-position: cover;
+
+}
+
+@media (min-width: 768px) {
+    .education-container {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .education-category {
+        width: 45%;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <section id="education">
+        <h2>Education</h2>
+        <p>we provide the education to the students that are performing well in the sports and we give them scholarships in different universities and colleges for
+             therir brighter future so that they will live their lives in a good manner.</p>
+        <div class="education-container">
+            <div class="education-category">
+                <h3>University Students</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Image</th>
+                            <th>Name</th>
+                            <th>Degree</th>
+                            <th>Year</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Repeat this block for each student -->
+                        <tr>
+                            <td><img src="https://images.pexels.com/photos/1462633/pexels-photo-1462633.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Student Image 1" class="student-img"></td>
+                            <td>ALINA</td>
+                            <td>Bachelor of Science</td>
+                            <td>2023</td>
+                            <td>Currently Studying</td>
+                        </tr>
+                        <tr>
+                            <td><img src="https://images.pexels.com/photos/3769021/pexels-photo-3769021.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Student Image 2" class="student-img"></td>
+                            <td>ANDREA</td>
+                            <td>Master of Arts</td>
+                            <td>2022</td>
+                            <td>Completed Degree</td>
+                        </tr>
+                        <tr>
+                            <td><img src="https://images.pexels.com/photos/1007066/pexels-photo-1007066.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Student Image 1" class="student-img"></td>
+                            <td>ALINA</td>
+                            <td>Bachelor of Science</td>
+                            <td>2023</td>
+                            <td>Currently Studying</td>
+                        </tr>
+                        <tr>
+                            <td><img src="https://images.pexels.com/photos/3769021/pexels-photo-3769021.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Student Image 2" class="student-img"></td>
+                            <td>ANDREA</td>
+                            <td>Master of Arts</td>
+                            <td>2022</td>
+                            <td>Completed Degree</td>
+                        </tr>
+                        <tr></tr>
+                            <td><img src="https://images.pexels.com/photos/1462633/pexels-photo-1462633.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Student Image 1" class="student-img"></td>
+                            <td>ALINA</td>
+                            <td>Bachelor of Science</td>
+                            <td>2023</td>
+                            <td>Currently Studying</td>
+                        </tr>
+                        <tr>
+                            <td><img src="https://images.pexels.com/photos/3769021/pexels-photo-3769021.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Student Image 2" class="student-img"></td>
+                            <td>ANDREA</td>
+                            <td>Master of Arts</td>
+                            <td>2022</td>
+                            <td>Completed Degree</td>
+                        </tr>
+                        <tr>
+                            <td><img src="https://images.pexels.com/photos/1007066/pexels-photo-1007066.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Student Image 1" class="student-img"></td>
+                            <td>ALINA</td>
+                            <td>Bachelor of Science</td>
+                            <td>2023</td>
+                            <td>Currently Studying</td>
+                        </tr>
+                        <tr>
+                            <td><img src="https://images.pexels.com/photos/3769021/pexels-photo-3769021.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Student Image 2" class="student-img"></td>
+                            <td>ANDREA</td>
+                            <td>Master of Arts</td>
+                            <td>2022</td>
+                            <td>Completed Degree</td>
+                        </tr>
+                        <!-- Add more students as needed -->
+                    </tbody>
+                </table>
+            </div>
+            <div class="education-category">
+                <h3>College Students</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Image</th>
+                            <th>Name</th>
+                            <th>Degree</th>
+                            <th>Year</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Repeat this block for each student -->
+                        <tr>
+                            <td><img src="https://images.pexels.com/photos/1329494/pexels-photo-1329494.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Student Image 3" class="student-img"></td>
+                            <td>chu hinh</td>
+                            <td>Associate Degree</td>
+                            <td>2023</td>
+                            <td>Currently Studying</td>
+                        </tr>
+                        <tr>
+                            <td><img src="https://images.pexels.com/photos/2826131/pexels-photo-2826131.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Student Image 4" class="student-img"></td>
+                            <td>Stemoty</td>
+                            <td>Diploma</td>
+                            <td>2022</td>
+                            <td>Completed Degree</td>
+                        </tr>
+                        <tr></tr>
+                            <td><img src="https://images.pexels.com/photos/1329494/pexels-photo-1329494.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Student Image 3" class="student-img"></td>
+                            <td>chu hinh</td>
+                            <td>Associate Degree</td>
+                            <td>2023</td>
+                            <td>Currently Studying</td>
+                        </tr>
+                        <tr>
+                            <td><img src="https://images.pexels.com/photos/2065490/pexels-photo-2065490.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Student Image 4" class="student-img"></td>
+                            <td>Stemoty</td>
+                            <td>Diploma</td>
+                            <td>2022</td>
+                            <td>Completed Degree</td>
+                        </tr>
+                        <tr></tr>
+                            <td><img src="https://images.pexels.com/photos/1329494/pexels-photo-1329494.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Student Image 3" class="student-img"></td>
+                            <td>chu hinh</td>
+                            <td>Associate Degree</td>
+                            <td>2023</td>
+                            <td>Currently Studying</td>
+                        </tr>
+                        <tr>
+                            <td><img src="https://images.pexels.com/photos/2826131/pexels-photo-2826131.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Student Image 4" class="student-img"></td>
+                            <td>Stemoty</td>
+                            <td>Diploma</td>
+                            <td>2022</td>
+                            <td>Completed Degree</td>
+                        </tr>
+                        <tr></tr>
+                            <td><img src="https://images.pexels.com/photos/1329494/pexels-photo-1329494.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Student Image 3" class="student-img"></td>
+                            <td>chu hinh</td>
+                            <td>Associate Degree</td>
+                            <td>2023</td>
+                            <td>Currently Studying</td>
+                        </tr>
+                        <tr>
+                            <td><img src="https://images.pexels.com/photos/2065490/pexels-photo-2065490.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Student Image 4" class="student-img"></td>
+                            <td>Stemoty</td>
+                            <td>Diploma</td>
+                            <td>2022</td>
+                            <td>Completed Degree</td>
+                        </tr>
+                        <!-- Add more students as needed -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

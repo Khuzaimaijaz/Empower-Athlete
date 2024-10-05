@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #ff0015;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        header h1 {
+            font-size: 5vw;
+        }
+
+        .about-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h2 {
+            color: #ff0015;
+            background-color: black;
+            width: fit-content;
+            padding: 10px 25px;
+            border-radius: 10px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            color: #fff;
+            background-color: #000;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 8vw;
+            }
+
+            h2 {
+                width: 100%;
+                text-align: center;
+            }
+
+            .about-content div {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .about-content div img {
+                margin: 10px 0;
+            }
+        }
+    </style>
+    <title>About Us</title>
+</head>
+<body>
+    <header>
+        <h1>About Us</h1>
+    </header>
+    <section class="about-content">
+        <h2>OUR MISSION</h2>
+        <div style="display: flex;   align-items: center; gap: 2px;">
+            <p>“Our mission is to provide essential resources and support to impoverished communities, empowering individuals to overcome poverty and build a brighter future. We achieve this through community-driven initiatives, education, and sustainable development projects.”</p>
+            <img src="cava_logo-removebg-preview.png" alt="Charity Team" width="320" height="200">
+        </div>
+        <h2>OUR VISION</h2>
+        <div  style="display: flex; flex-wrap: wrap;  align-items: center; gap: 13px;">
+            <p>“Our vision is a world where every individual has the opportunity to live a life free from poverty, with access to education, healthcare, and sustainable livelihoods.”</p>
+            <img src="logo.jpg" alt="Charity Team" width="320" height="200">
+        </div>
+        <h2>ABOUT FOUNDATION</h2>
+        <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 2px;">
+        <p>“Founded in 2024, Empower Athletes was born out of a deep commitment to alleviate poverty and uplift underprivileged communities. Our journey began when our founder, "Empower Athletes", witnessed the harsh realities faced by impoverished families and decided to take action.”</p>
+        <img src="sufi final.png" alt="Charity Team" width="320" height="400"></div>
+    </section>
+    <footer>
+        <div class="connectContainer">
+            <div class="title">Connect With Me</div>
+            <p>Ghazi Road, DHA phase 2, Lahore <br>
+                2001031, PAKISTAN
+            </p>
+            <p>INFO@gmail.com</p>
+            <p>(+09)03230909098</p>
+        </div>
+    </footer>
+</body>
+</html>

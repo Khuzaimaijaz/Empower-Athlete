@@ -1,0 +1,1128 @@
+:root{
+    --themeRed:#ff0015;
+    --gray:#e4e1e1;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+   color: #000;
+}
+p{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 26px;
+}
+section{
+    padding: 100px;
+    position: relative;
+}
+.fullcontainer{
+    height: 100%;
+    width: 100%;
+}
+.container{
+    width: 1140px;
+    margin: auto;
+}
+
+/* ...............................................NAVBAR.................................................................................. */
+header{
+    width: 100%;
+    background-color:rgba(0, 0, 0, 0.6);
+    position: fixed;
+    z-index: 2;
+}
+header .container{
+    display: flex;
+    justify-content: space-between;
+
+}
+header .container .logo{
+    padding: 15px 0;
+    height: 75px;
+
+}
+header .container .logo img{
+    height: 100%;
+}
+header nav ul{
+    list-style-type: none;
+}
+header nav ul li{
+    display: inline-block;
+}
+
+
+header nav ul li a{
+    display: inline-block;
+    height: 75px;
+    line-height: 75px;
+    padding: 0 15px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 16px;
+    color: #fff;
+    transition: 0.3s;
+}
+
+header nav ul li a:hover{
+   background-color: var(--themeRed) ;
+}
+
+
+/* ...............................................BANNER.................................................................................. */
+.banner{
+    min-height: 100vh;
+    width: 100%;
+    /* background-image: url("main img.jpg"); */
+    background-size: cover;
+    background-attachment: fixed;
+    
+
+}
+
+.banner h1{
+    margin-top: 230px;
+    display: inline-block;
+    font-size: 4.5rem;
+    color: #fff;
+    text-shadow: 0 0 2px #000;
+    width: 50%;
+    line-height: 4.2rem;
+    font-weight: 300;
+    position: relative;
+    
+
+
+}
+
+
+.banner h1 span{
+    background-color: var(--themeRed);
+    display: inline-block;
+    line-height: 3.5rem;
+    padding:0 15px;
+    font-weight: 600;
+    border-radius: 5px; 
+    position: relative;
+    
+}
+
+.banner p{
+    color: #fff;
+    width: 70%;
+    text-shadow: 0 0 2px #000;
+    margin-top: 15px;
+    font-size: 2rem;
+    position: relative;
+  
+}
+
+
+
+
+
+.banner .container .videoPlayer{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+   width: 100%;
+    transform: translate(-50%,-50%);
+    object-fit: cover;
+}
+
+.banner button{
+    background-color: var(--themeRed);
+    color: #fff;
+    border: 0;
+    outline: none;
+    margin-top: 10px;
+    font-size: 20px;
+    padding: 10px 15px;
+    font-weight: 600;
+    border-radius: 3px;
+    position: relative;
+    
+}
+.banner button:hover{
+    border: 3px solid #fff;
+}
+.banner button:hover a{
+    color: white;
+    transition: 0.5s;
+    
+}
+
+
+.sectionTitle{
+    width: 300px;
+    border-bottom: 3px solid var(--themeRed);
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 200;
+    margin: 0 auto 50px;
+    position: relative;
+    padding: 10px 0;
+    text-transform: uppercase;
+}
+
+.sectionTitle::after{
+    display: inline-block;
+    content: "";
+    height: 15px;
+    width: 15px;
+    background-color: var(--themeRed);
+    position: absolute;
+    left: calc(50% - 10px);
+    top: calc(75% - 7px);
+    transform: rotate(45deg) translate(50%, 50%);
+    border: 3px solid #fff;
+
+}
+
+/* ...............................................ABOUT SECTION.................................................................................. */
+
+#aboutSection .container>p{
+    text-align: center;
+}
+
+#aboutSection .cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+    position: relative;
+    height: 245px;
+    transform: translateY(30px);
+    opacity: 0;
+
+
+}
+#aboutSection .cards>div{
+    width: 350px;
+    background-color: var(--gray);
+    padding: 35px;
+    color: #444;
+    text-align: center;
+    border-radius: 15px;
+    height: 215px;
+    border: 1px solid #ccc;
+    transition: 0.3s;
+
+}
+
+#aboutSection .cards>div:hover{
+    height: auto;
+    margin-top: -20px;
+    padding: 55px;
+    border: 1px solid var(--themeRed);
+    width: 400px;
+}
+
+
+
+
+
+
+
+
+#aboutSection .cards>div .title{
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+   
+}
+
+#aboutSection .cards>div p{
+    font-size: 14px;
+    margin-top: 15px;
+
+}
+
+
+#aboutSection .cards>div button{
+    border: 1px solid var(--themeRed);
+    outline: none;
+    padding: 7px 15px;
+    margin-top: 15px;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+
+#aboutSection .cards> div:hover button{
+    background-color: var(--themeRed);
+    color: #fff;
+}
+@keyframes example {
+    from {color: rgb(244, 244, 244);}
+    to {color: rgb(0, 0, 0);}
+  }
+
+#aboutSection .link-button{
+    text-align: center;
+    margin-top: 40px;
+    
+}
+#aboutSection .link-button>button{
+    border: none;
+    outline: none;
+}
+#aboutSection .link-button>button a{
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: large;
+    padding: 30px 25px;
+    border-radius: 15px; 
+    transition:0.2s;
+    animation-name: example;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    background-color: #e43a47;
+    border: none;
+    outline: none;
+   
+}
+#aboutSection .link-button>button:hover a{
+    padding: 35px 30px;
+    border: 3px solid #e43a47;
+}
+
+/* ...............................................PROGRAMS.................................................................................. */
+.programs{
+    background-color: var(--gray);
+}
+.programs .boxContainer{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 50px;
+}
+.programs .link-button{
+    text-align: center;
+    margin-top: 40px;
+    
+}
+.programs .link-button>button{
+    border: none;
+    outline: none;
+}
+
+.programs .link-button>button a{
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: large;
+    padding: 30px 25px;
+    border-radius: 15px; 
+    transition:0.2s;
+    animation-name: example;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    background-color: #e43a47;
+    border: none;
+    outline: none;
+}
+
+
+.programs .boxContainer .box{
+    background-color: #fff;
+    text-align: center;
+    padding-bottom:25px;
+    border-radius: 5px;
+    box-shadow:0 0 3px 0 var(--gray);
+    position: relative;
+    margin-bottom: 15px;
+   
+
+}
+
+
+.programs .boxContainer .box .cardImage{
+    width:100%;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px 5px 0 0;
+}
+
+.programs .boxContainer .box .cardImage:after{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    filter: grayscale(100%);
+    transition: 0.4s;
+}
+
+
+
+.programs .boxContainer .box:nth-child(1) .cardImage,
+.programs .boxContainer .box:nth-child(1) .cardImage:after{
+    background-image: url('EAimages/education1.jpg');
+}     
+
+.programs .boxContainer .box:nth-child(2) .cardImage,
+.programs .boxContainer .box:nth-child(2) .cardImage:after{
+    background-image: url('EAimages/p3.jpg');
+} 
+.programs .boxContainer .box:nth-child(3) .cardImage,
+.programs .boxContainer .box:nth-child(3) .cardImage:after{
+    background-image: url('EAimages/img1.jpg');
+} 
+.programs .boxContainer .box:nth-child(4) .cardImage,
+.programs .boxContainer .box:nth-child(4) .cardImage:after{
+    background-image: url('EAimages/health.jpg');
+} 
+
+
+.programs .boxContainer .box:hover .cardImage:after{
+    top: 100%;
+}
+
+.programs .boxContainer .box .programTitle{
+    font-size: 18px;
+    margin-top: 15px;
+    font-weight: 600;
+    color: #444;
+
+}
+.programs .boxContainer .box .donationCount{
+    font-size: 13px;
+    font-weight: 600;
+    color: #444;
+    margin-top: 10px;
+
+}
+
+.programs .boxContainer .box .donationCount span{
+    color: var(--themeRed);
+}
+
+
+.programs .boxContainer .box button{
+    position: absolute;
+    left: 50%;
+    background-color: var(--themeRed);
+    color: #fff;
+    transform: translate(-50%);
+    bottom: -15px;
+    border-radius: 60px;
+    padding: 7px 15px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+
+
+
+/* ...............................................TEAM.................................................................................. */
+
+/* Existing CSS */
+.team-section {
+    text-align: center;
+    padding: 100px 0 200px 0;
+    background-color: #fff;
+}
+
+.team-section h1 {
+    font-size: 2rem;
+    font-weight: 200;
+    margin-bottom: 90px;
+}
+
+.team-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+
+.team-member {
+    background-color: #e4e1e1;
+    border-radius: 10px;
+    padding: 30px;
+    width: 300px;
+    text-align: center;
+}
+
+.team-member img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.team-member h3 {
+    font-size: 27px;
+    margin: 10px 0;
+}
+
+.team-member p {
+    font-size: 20px;
+    color: #666;
+}
+
+.team-member button {
+    background-color: #ff0015;
+    text-decoration: none;
+    border: none;
+    color: #f4f4f4;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.team-member button:hover {
+    border: 1px solid #ff0015;
+    transition: .5s;
+}
+
+.team-member button a {
+    text-decoration: none;
+    color: #f4f4f4;
+}
+
+/* Modal CSS */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+
+
+
+#events{
+    height: 100vh;
+    padding: 20px;
+    background-color: #e4e1e1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.events-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+/* ...............................................EVENTS.................................................................................. */
+.event {
+    width: 48%;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.event h3 {
+    color: #e91e63;
+}
+
+.event p {
+    color: #555;
+}
+
+.event>video {
+    width: 100%;
+    height: auto;
+    max-height: 50vh;
+    border-radius: 8px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.more-events {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.more-events{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.more-events button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #e91e63;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.more-events button:hover {
+    background-color: #d81b60;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    #events{
+        height: auto;
+    }
+    .event {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    #events{
+        height: auto;
+    }
+    
+    .events-section {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .event {
+        width: 100%;
+    }
+
+    .event>video {
+        max-height: 30vh;
+    }
+}
+
+
+
+
+
+
+
+
+/* ...............................................EDUCATION.................................................................................. */
+
+
+
+.education{
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 15px;
+}
+.education .videoPlayer{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%,-50%);
+    object-fit: cover;
+}
+.education .sectionTitle{
+    color: #fff;
+    font-size: 3rem;
+    text-shadow: 0 0 4px #000;
+}
+
+.education .educationContainer{
+    position: absolute;
+    background-color: #00000096;
+    width: 600px;
+    top: 35vh;
+    color: #fff;
+    text-shadow: 0 0 3px #000;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+
+.education .educationContainer h3{
+    font-size: 40px;
+    font-weight: 400;
+}
+.education .educationContainer p{
+    font-size: 15px;
+    line-height: 20px;
+    margin: 10px 0 30px;
+}
+.education .educationContainer button{
+    background-color: var(--themeRed);
+    border: 0;
+    color: #fff;
+    padding: 10px 25px;
+    font-weight: bold;
+    font-size: 14px;
+    outline: none;
+}
+
+
+
+/* ...............................................REVIEWS.................................................................................. */
+
+.reviews{
+    margin: 0;
+    padding: 20px;
+    height: 100%;
+   
+
+  }
+  .quote-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10vh;
+    
+    height: 100vh;
+    text-align: center;
+    background-color: #e4e1e1;
+    padding: 30px;
+  }
+  .quote {
+    font-size: 3rem;
+    font-weight: 700;
+    opacity: 0;
+    color: #000;
+    transform: translateX(-30px);
+  }
+  .quote-container a{
+    text-decoration: none;
+    border: none;
+  }
+  .quote-button button{
+      padding: 15px 15px;
+      color: #e4e1e1;
+      background-color: #ff0015;
+      border: none;
+      font-size: xx-large;
+      border-radius: 10px;
+  }
+
+/* ...............................................GALLERY.................................................................................. */
+
+
+.gallery .galleryContainer{
+    column-count: 4;
+    column-gap: 20px;
+}
+.gallery .galleryContainer .item{
+    position: relative;
+    margin-bottom:20px ;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.gallery .galleryContainer img{
+    width: 100%;
+    display: block;
+    border-radius: 5px;
+    transition: 0.4s;
+}
+
+.gallery .galleryContainer .title{
+    position: absolute;
+    background-color: var(--gray);
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 17px;
+    font-weight: bold;
+    opacity: 0;
+    z-index: 1;
+    transition: 0.4s;
+}
+
+.gallery .galleryContainer .item:hover .title{
+    opacity: 1;
+}
+.gallery .galleryContainer .item:hover img{
+    transform: scale(1.2);
+}
+
+
+
+/* ...............................................JOIN.................................................................................. */
+
+
+.join{
+    background-image: url("EAimages/joinus1.jpg");
+    color: #fff;
+}
+.join .joinTitle{
+    font-size: 40px;
+    font-weight: 300;
+}
+.join .joinTitle span{
+    font-weight: 800;
+
+}
+.join button{
+    padding: 7px 15px;
+    margin-top: 20px;
+    border: 0;
+    outline: none;
+    font-weight: 600;
+    font-size: 16px;
+
+}
+ 
+.join button.joinNow{
+    margin-right: 10px;
+    background-color: #424242;
+    color: #fff;
+
+
+}
+.join button.joinNow a{
+    color: #fff;
+}
+
+.join button.adaptBtn{
+    background-color: var(--gray);
+}
+
+
+
+/* ...............................................FOOTER.................................................................................. */
+
+
+footer{
+    background-color: #181818;
+    color: #ffffffa5;
+    padding: 50px 0;
+    font-size: 14px;
+}
+footer .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 50px;
+}
+footer .title{
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-bottom: 2px solid #fff;
+    margin-bottom: 30px;
+    padding: 0 0 5px 0;
+}
+footer p{
+    margin-bottom: 14px;
+
+}
+footer .linksContainer{
+    list-style-type: none;
+}
+footer .linksContainer ul li a{
+    text-decoration: none;
+    color: #ffffffa5;
+    margin-bottom: 6px;
+    display: inline-block;
+}
+footer .newsLetterContainer img{
+    height: 40px;
+    margin-bottom: 11px;
+}
+
+footer .newsLetterContainer input{
+    background-color: transparent;
+    border: 1px solid #ffffffa5;
+    outline: none;
+    padding: 10px 15px;
+    width: 100%;
+    margin-top: 10px;
+    color: #ccc;
+    border-radius: 30px;
+}
+
+
+/* ...................................responsiveness.................................... */
+
+
+@media screen and (max-width:1140px) {
+    .container{
+        width: 100%;
+        padding: 0 15px;
+
+
+    }
+    .education .videoPlayer {
+        width: 1280px;
+
+    }
+    
+}
+
+@media screen and (max-width:1080px){
+    .banner h1{
+        margin-top: 200px;
+    }
+    #aboutSection .cards{
+        justify-content: space-around;
+        height: auto;
+
+
+    }
+
+    #aboutSection .cards > div{
+        margin: 10px 0;
+    }
+}
+
+@media screen and (max-width:1024px){
+    .banner .container  .videoPlayer{
+        width: 100%;
+        height: 100%;
+    }
+    .banner{
+        background-position-x: 45%;
+    }
+    .banner h1{
+        font-size: 2.5rem;
+
+    }
+    .programs .boxContainer{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media screen and (max-width:768px){
+    header nav{
+        position: relative;
+        border: 2px solid #fff;
+        height: 30px;
+        width: 30px;
+        margin-top: 20px;
+        border-radius: 5px;
+    }
+    header nav:after{
+        top: 17px;
+
+    }
+    header nav:before{
+        top: 7px;
+
+
+    }
+    header nav:after,
+    header nav::before{
+        content: "";
+        height: 2px;
+        width: 17px;
+        background-color: #fff;
+        display: block;
+        position: absolute;
+        left: 5px;
+
+    }
+    header nav ul{
+        position: absolute;
+        right: -400px;
+        top: 53px;
+        transition: 0.5s;
+    }
+    header nav:hover ul{
+        right: 0;
+    }
+    header nav ul li{
+        display: block;
+    }
+    header nav ul li a{
+        width: 300px;
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+    .banner {
+        background-position-x: 65%;
+    }
+    .banner p{
+        font-size: 14px;
+
+    }
+    .banner p,
+    .banner h1{
+        width: 70%;
+    }
+    #aboutSection .cards > div:hover{
+        width: 350px;
+    }
+    .education .educationContainer{
+        width: 96%;
+    }
+    .education .educationContainer h3 {
+        font-size: 30px;
+        line-height: 35px;
+
+    }
+    .education .educationContainer p{
+        margin: 10px 0 20px;
+    }
+    .gallery .galleryContainer{
+        column-count: 2;
+
+    }
+}
+
+
+
+/* ...........................................................mobile responsiveness............................. */
+@media screen and (max-width: 425px){
+    .banner h1{
+        margin-top: 150px;
+        font-size: 2rem;
+        line-height: 3rem;
+
+
+    }
+    
+    .banner button {
+        margin-bottom: 10px;
+    }
+    .sectionTitle{
+        width: 210px;
+        padding-right: 30px;
+    }
+   
+
+    
+    #aboutSection .container>p {
+        text-align: justify;
+        width: 110%;
+        
+        
+    }
+   
+   
+    #aboutSection .cards>div{
+        height: auto;
+    }
+
+    #aboutSection .cards > div:hover {
+        width: 400px;
+        margin-top: 10px;
+        padding: 35px;
+    }
+    #aboutSection .link-button>button a{
+        padding: 15px;
+        font-size: small;
+    }
+    
+
+    .programs .boxContainer{
+        grid-template-columns: 1fr;
+    }
+    .programs .link-button>button a{
+        padding: 15px;
+        font-size: small;
+    }
+    .programs .boxContainer .box button{
+        bottom: -30px;
+    }
+    
+    .education .videoPlayer{
+        width: 1400px;
+        
+      
+ 
+    }
+    .education .educationContainer{
+        width: 93%;
+        left: 0;
+    }
+    .review-head{
+        font-size: 1.5rem;
+    }
+    .quote-container{
+        width: 60vw;
+    }
+    .quote{
+        font-size: 2rem;
+        font-weight: 400;
+    }
+    .quote-button button{
+        padding: 7px;
+        font-size: large;
+    }
+    .gallery .galleryContainer{
+        column-count: 1;
+    }
+    footer .container{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width:320px) {
+    #aboutSection .cards {
+        overflow: hidden;
+    }
+    .education .educationContainer h3{
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .banner h1{
+        margin-top: 100px;
+    }
+    
+}
+

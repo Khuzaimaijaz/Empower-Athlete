@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empower Athlete - Events</title>
+   <style>
+ 
+
+#events {
+    text-align: center;
+    padding: 20px;
+}
+.maincontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    
+}
+.event-container {
+    display: inline-block;
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 2rem;
+
+}
+.event-container>h2{
+    margin-top: 5rem;
+    text-transform: uppercase;
+}
+
+
+.event-container:hover {
+    background-color: #ddd;
+}
+
+.hidden {
+    display: none;
+}
+
+#event-details {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+   </style>
+</head>
+<body>
+    <section id="events">
+        <h2>OUR EVENTS</h2>
+        <div class="maincontainer">
+            <div class="1st">
+        <div class="event-container" onclick="showDetails('taekwondo')">
+            <h2>Taekwondo</h2>
+           
+        </div>
+        <div class="event-container" onclick="showDetails('karate')">
+            <h2>Karate</h2>
+        </div>
+        <div class="event-container" onclick="showDetails('judo')">
+            <h2>Judo</h2>
+        </div>
+        <div class="event-container" onclick="showDetails('hockey')">
+            <h2>Hockey</h2>
+        </div>
+    </div>
+    <div class="2nd">
+        <div class="event-container" onclick="showDetails('cricket')">
+            <h2>Cricket</h2>
+        </div>
+        <div class="event-container" onclick="showDetails('football')">
+            <h2>Football</h2>
+        </div>
+        <div class="event-container" onclick="showDetails('swimming')">
+            <h2>Swimming</h2>
+        </div>
+        <div class="event-container" onclick="showDetails('athletic')">
+            <h2>athletic</h2>
+        </div>
+    </div>
+    </div>
+    </section>
+
+    <div id="event-details" class="hidden">
+        <button onclick="hideDetails()">Close</button>
+        <div id="details-content"></div>
+    </div>
+
+     <script>
+        function showDetails(event) {
+    const details = {
+        taekwondo: {
+            description: "Taekwondo event details and video.",
+            video: "<iframe width='400' height='315' src='https://www.youtube.com/embed/wCnNtsGwtSM' frameborder='0' allowfullscreen></iframe>"
+        },
+        karate: {
+            description: "Karate event details and video.",
+            video: "<iframe width='400' height='315' src='https://www.youtube.com/embed/VIDEO_ID' frameborder='0' allowfullscreen></iframe>"
+        },
+        judo: {
+            description: "Judo event details and video.",
+            video: "<iframe width='400' height='315' src='https://www.youtube.com/embed/VIDEO_ID' frameborder='0' allowfullscreen></iframe>"
+        },
+        hockey: {
+            description: "Hockey event details and video.",
+            video: "<iframe width='400' height='315' src='https://www.youtube.com/embed/VIDEO_ID' frameborder='0' allowfullscreen></iframe>"
+        },
+        cricket: {
+            description: "Cricket event details and video.",
+            video: "<iframe width='400' height='315' src='https://www.youtube.com/embed/VIDEO_ID' frameborder='0' allowfullscreen></iframe>"
+        },
+        football: {
+            description: "Football event details and video.",
+            video: "<iframe width='400' height='315' src='https://www.youtube.com/embed/VIDEO_ID' frameborder='0' allowfullscreen></iframe>"
+        },
+        swimming: {
+            description: "Swimming event details and video.",
+            video: "<iframe width='400' height='315' src='https://www.youtube.com/embed/VIDEO_ID' frameborder='0' allowfullscreen></iframe>"
+        },
+        athletic: {
+            description: "athletic event details and video.",
+            video: "<iframe width='400' height='315' src='https://www.youtube.com/embed/VIDEO_ID' frameborder='0' allowfullscreen></iframe>"
+        },
+    };
+
+    const eventDetails = details[event];
+    document.getElementById('details-content').innerHTML = `<p>${eventDetails.description}</p>${eventDetails.video}`;
+    document.getElementById('event-details').classList.remove('hidden');
+}
+
+function hideDetails() {
+    document.getElementById('event-details').classList.add('hidden');
+}
+
+     </script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .review-section {
+  text-align: center;
+  padding: 50px;
+  background-color: #f9f9f9;
+}
+
+.reviews {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.review {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #fff;
+  width: 300px;
+}
+
+.review p {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+video {
+  width: 100%;
+  border-radius: 10px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="review-section">
+        <h1> Our Students Reviews</h1>
+        <div class="reviews">
+          <div class="review">
+            <p>"ZARGUNA" <br> Intertional medalist</p>
+            <video controls>
+              <source src="https://videos.pexels.com/video-files/19935237/19935237-uhd_2560_1440_30fps.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="review">
+            <p>"FAKHRA" <br> Intertional medalist</p>
+            <video controls>
+              <source src="https://videos.pexels.com/video-files/19935237/19935237-uhd_2560_1440_30fps.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="review">
+            <p>"SUMAN" <br> Intertional medalist</p>
+            <video controls>
+              <source src="https://videos.pexels.com/video-files/19935237/19935237-uhd_2560_1440_30fps.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="review">
+            <p>"SARTAJ" <br> Intertional medalist</p>
+            <video controls>
+              <source src="https://videos.pexels.com/video-files/19935237/19935237-uhd_2560_1440_30fps.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="review">
+            <p>"KHUZAIMA" <br> Intertional Player</p>
+            <video controls>
+              <source src="https://videos.pexels.com/video-files/19935237/19935237-uhd_2560_1440_30fps.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="review">
+            <p>"BILAL"<br> Intertional Player</p>
+            <video controls>
+              <source src="https://videos.pexels.com/video-files/19935237/19935237-uhd_2560_1440_30fps.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="review">
+            <p>"Great experience! Highly recommend."</p>
+            <video controls>
+              <source src="https://videos.pexels.com/video-files/19935237/19935237-uhd_2560_1440_30fps.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="review">
+            <p>"Great experience! Highly recommend."</p>
+            <video controls>
+              <source src="https://videos.pexels.com/video-files/19935237/19935237-uhd_2560_1440_30fps.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="review">
+            <p>"Amazing service and support."</p>
+            <video controls>
+              <source src="https://videos.pexels.com/video-files/19935237/19935237-uhd_2560_1440_30fps.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <!-- Add more reviews as needed -->
+        </div>
+      </div>
+      
+      
+
+      <script>const reviews = document.querySelectorAll('.review');
+        let currentReview = 0;
+        
+        function showReview(index) {
+          reviews.forEach((review, i) => {
+            review.style.display = i === index ? 'block' : 'none';
+          });
+        }
+        
+        document.querySelector('.next').addEventListener('click', () => {
+          currentReview = (currentReview + 1) % reviews.length;
+          showReview(currentReview);
+        });
+        
+        document.querySelector('.prev').addEventListener('click', () => {
+          currentReview = (currentReview - 1 + reviews.length) % reviews.length;
+          showReview(currentReview);
+        });
+        
+        showReview(currentReview);
+        </script>
+</body>
+</html>
